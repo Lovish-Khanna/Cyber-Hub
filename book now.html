@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        *{ margin: 0;
+       padding: 0;
+         font-family:century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        box-sizing: border-box;
+        }
+        .contact{ position: relative;
+        min-height: 100vh;
+        padding: 50px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(book\ now.jpg);
+        background-size: cover;
+       background-position: center;
+       width: auto;
+        }
+        .contact .content{
+            text-align: center;
+            max-width: 800px;
+        }
+        .contact .content h2{
+            font-size: 36px;
+            color: #fff;
+            font-weight: 500;
+        }
+        .contact .content  p{
+            
+            color: #fff;
+            font-weight: 300;
+        }
+        .contactform{
+            background: #fff;
+            width: 40%;
+            padding: 40px;
+        }
+        .contactform h2{
+            font-weight: 500;
+            color-adjust: #333;
+            font-size: 25px;
+        }
+        .contactform .inputBox{
+            margin-top: 10px;
+            position: relative;
+            width: 100%;
+        }
+        .contactform .inputBox input,
+        .contactform .inputBox textarea { width: 100%;
+                   padding: 5px 0;
+                   font-size: 16px;
+                border: none;
+                margin:10px 0;
+                border-bottom: 2px solid #333;
+                outline: none;
+                resize: none;
+        }
+        .contactform .inputBox span{
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+                   font-size: 16px;
+                   margin:10px 0;
+                   pointer-events: none;
+                   transition: 0.5s;
+                   color: #666;
+        }
+        .contactform .inputBox input:focus~span,
+        .contactform .inputBox input:valid~span,
+        .contactform .inputBox textarea:focus~span,
+        .contactform .inputBox textarea:valid~span
+        { color: #091e63;
+          font-size: 12px;
+          transform: translateY(-20px);
+        }
+        .contactform .inputBox input[type="submit"]{
+            width: 100px;
+            background: #00bcd4;
+            font-size: 18px;
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+  <section class="contact">
+<div class="content">
+<h2>Book Now</h2>
+</div>
+</div>
+<div class="contactform">
+    <form>
+        <h2>CYBER HUB-Your smile, our happiness.</h2>
+        <div class="inputBox">
+            <input type="text" name="" required="required"/>
+            <span>First Name</span>
+        </div>
+        <div class="inputBox">
+            <input type="text" name="" required="required"/>
+            <span>Last Name</span>
+        </div>
+        <div class="inputBox">
+            <input type="tel" name="" required="required"/> 
+            <span>Phone Number</span>
+        </div>
+        <div class="inputBox">
+            <input type="text" name="" required="required"/>
+            <span>Email</span>
+        </div>
+        <div class="inputBox">
+            <input type="password" name="" required="required"/>
+            <span>Password</span>
+        </div>
+        
+        <div class="inputBox">
+            <input list="Facalities"  name="" required="required"/>
+            <span>Our Services</span>
+        <datalist id="Facalities">
+          <option value=" HOTELS"></option>
+          <option value="PARTY HALLS"></option>
+        </datalist>
+        </div>
+        
+      <div class="inputBox">
+            <input type="number" name="" required="required"/> 
+            <span> Number of people</span>
+        </div>
+        <div class="inputBox">
+            <textarea required="required"></textarea>
+            <span>Type Your Message.....</span>
+        </div>
+        <div class="inputBox">
+            <input type="submit" name="" value="Send"/>
+            
+        </div>
+    </form>
+</div>
+</div>
+    </section>
+</body>
+</html>
